@@ -495,7 +495,7 @@
                     <div class="card-header widget-header d-flex align-items-center"
                         style="background-color:transparent;border-bottom:0">
                         <span><img class="hot-ico"
-                                src="https://nav.iowen.cn/wp-content/themes/onenav/images/hotico/baidu.png"
+                                src="https://api.uomg.com/api/get.favicon?url=http://www.baidu.com"
                                 alt="百度热点"><span class="title-1631797527">百度热点</span></span>
                         <span class="ml-auto d-none d-md-block text-xs slug-1631797527"></span>
                     </div>
@@ -574,8 +574,8 @@
                     <div class="card-header widget-header d-flex align-items-center"
                         style="background-color:transparent;border-bottom:0">
                         <span><img class="hot-ico"
-                                src="https://api.uomg.com/api/get.favicon?url=http://www.zhihu.com"
-                                alt="知乎热度排行榜"><span class="title-1237381323">知乎热度排行榜</span></span>
+                                src="https://api.uomg.com/api/get.favicon?url=http://www.weibo.com"
+                                alt="微博热搜"><span class="title-1237381323">微博热搜</span></span>
                         <span class="ml-auto d-none d-md-block text-xs slug-1237381323"></span>
                     </div>
                     <div class="card-body pb-3 pt-0">
@@ -608,31 +608,13 @@
                                 getList(ruleId);
                             });
                             function getList(id) {
-                                $.get("https://api.vvhan.com/api/hotlist?type=zhihuHot", function (response, status) {
+                                $.get("https://api.vvhan.com/api/hotlist?type=wbHot", function (response, status) {
                                     var html = '';
                                     var data = response.data;
                                     
                                     for (var i = 0; i < data.length; i++) {
                                         html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['title'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
                                     }
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     $("#hot-loading-1237381323").fadeOut(200);
                                     $('#hot-lod-1237381323').children('i').removeClass('icon-spin');
@@ -695,24 +677,6 @@
                                         html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['title'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
                                     }
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     $("#hot-loading-2081089809").fadeOut(200);
                                     $('#hot-lod-2081089809').children('i').removeClass('icon-spin');
                                     $("#hot_news-2081089809").html(html);
@@ -732,8 +696,8 @@
                     <div class="card-header widget-header d-flex align-items-center"
                         style="background-color:transparent;border-bottom:0">
                         <span><img class="hot-ico"
-                                src="https://api.uomg.com/api/get.favicon?url=http://www.bilibili.com"
-                                alt="哔哩哔哩热榜"><span class="title-1577607373">哔哩哔哩热榜</span></span>
+                                src="https://api.uomg.com/api/get.favicon?url=http://www.ithome.com"
+                                alt="IT最新资讯"><span class="title-1577607373">IT最新资讯</span></span>
                         <span class="ml-auto d-none d-md-block text-xs slug-1577607373"></span>
                     </div>
                     <div class="card-body pb-3 pt-0">
@@ -766,30 +730,12 @@
                                 getList(ruleId);
                             });
                             function getList(id) {
-                                $.get("https://api.vvhan.com/api/hotlist?type=bili", function (response, status) {
+                                $.get("https://api.vvhan.com/api/hotlist?type=itNews", function (response, status) {
                                     var html = '';
                                     var data = response.data;
                                     for (var i = 0; i < data.length; i++) {
                                         html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['title'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
                                     }
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                     $("#hot-loading-1577607373").fadeOut(200);
                                     $('#hot-lod-1577607373').children('i').removeClass('icon-spin');
