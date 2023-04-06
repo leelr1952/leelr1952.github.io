@@ -702,6 +702,9 @@ th,td{border:1px solid rgba(136,136,136,.3);padding:8px 12px}
 .down-content .card-header-img{margin-top:-70px;padding:6px;width:90px;height:90px}
 }
 
+/* --- hot-ico --- */
+.hot-ico{height: 18px;margin-right: 0.25rem;margin-bottom: 0.2rem;}
+
 /* --- book-body --- */
 .book-info ul{list-style:none;margin:0;padding:0}
 .book-info .info-title{display:inline-block;width:70px;text-align:justify;text-justify:distribute-all-lines;-moz-text-align-last:justify;text-align-last:justify}
