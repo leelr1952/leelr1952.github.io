@@ -99,10 +99,19 @@
                                             
                                             <li><a href="#d2ec62e55d8567d2cfc9e6c30c6781e6" class="smooth"><span>AI音频</span></a></li>
                                             
-                                            <li><a href="#43a1dbd84a7b915b2be30d7e54809c8e" class="smooth"><span>AI工作</span></a></li>
+                                            <li><a href="#466b0cab633cdfce6cad7a7ce0566d76" class="smooth"><span>AI文案</span></a></li>
                                             
                                         </ul>
                                     </li> 
+                                    
+                                
+                                    
+                                    <li class="sidebar-item">
+                                        <a href="#366f92545386bb2d5c7d59b3aa2858f9" class="smooth">
+                                            <i class="fas fa-book fa-lg icon-fw icon-lg mr-2"></i>
+                                            <span>Prompt指南</span>
+                                        </a>
+                                    </li>
                                     
                                 
                                     
@@ -649,8 +658,8 @@
                     <div class="card-header widget-header d-flex align-items-center"
                         style="background-color:transparent;border-bottom:0">
                         <span><img class="hot-ico"
-                                src="https://api.uomg.com/api/get.favicon?url=http://www.36kr.com"
-                                alt="36氪热榜"><span class="title-2081089809">36氪热榜</span></span>
+                                src="https://api.uomg.com/api/get.favicon?url=http://www.zhihu.com"
+                                alt="知乎热榜"><span class="title-2081089809">知乎热榜</span></span>
                         <span class="ml-auto d-none d-md-block text-xs slug-2081089809"></span>
                     </div>
                     <div class="card-body pb-3 pt-0">
@@ -683,12 +692,12 @@
                                 getList(ruleId);
                             });
                             function getList(id) {
-                                $.get("https://api.vvhan.com/api/hotlist?type=36Ke", function (response, status) {
+                                $.get("https://tenapi.cn/v2/zhihuhot", function (response, status) {
                                     var html = '';
-                                    var data = response.data;
+                                    var data = JSON.parse(response).data;
                                     
                                     for (var i = 0; i < data.length; i++) {
-                                        html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['title'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
+                                        html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['name'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
                                     }
                                     
                                     $("#hot-loading-2081089809").fadeOut(200);
@@ -981,7 +990,7 @@
                 
                 
                     <a href="https://stability.ai/" target="_blank" data-id="" data-url="https://stability.ai/" class="card no-c mb-4"
-                        data-toggle="tooltip" data-placement="bottom" data-original-title="">
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="Stable Diffusion是2022年发布的深度学习文本到图像生成模型。它主要用于根据文本的描述产生详细图像，尽管它也可以应用于其他任务，如内补绘制、外补绘制，以及在提示词指导下产生图生图的翻译。">
                         
                         <div class="card-body">
                             <div class="url-content d-flex align-items-center">
@@ -999,12 +1008,47 @@
                                     <div class="text-sm overflowClip_1">
                                         <strong>Stable Diffusion</strong>
                                     </div>
-                                    <p class="overflowClip_1 m-0 text-muted text-xs"></p>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">Stable Diffusion是2022年发布的深度学习文本到图像生成模型。它主要用于根据文本的描述产生详细图像，尽管它也可以应用于其他任务，如内补绘制、外补绘制，以及在提示词指导下产生图生图的翻译。</p>
                                 </div>
                             </div>
                         </div>
                     </a>
                     <a href="https://stability.ai/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://www.cursor.so/" target="_blank" data-id="" data-url="https://www.cursor.so/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="OpenAI官方强力助推编写代码的IDE。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/cursor.svg"
+                                        data-src="assets/images/logos/cursor.svg"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Cursor">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Cursor</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">OpenAI官方强力助推编写代码的IDE。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.cursor.so/" class="togo text-center text-muted is-views" data-id="689"
                         data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
                         <i class="iconfont icon-goto"></i>
                     </a>
@@ -1520,6 +1564,41 @@
             </div>
         </div>
         
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://www.autodraw.com/" target="_blank" data-id="" data-url="https://www.autodraw.com/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="设计AI，智能绘画工具，快速绘制简单的图形和图标。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/autodraw.ico"
+                                        data-src="assets/images/logos/autodraw.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="AutoDraw">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>AutoDraw</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">设计AI，智能绘画工具，快速绘制简单的图形和图标。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.autodraw.com/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
     </div>
     <br />
     
@@ -1667,31 +1746,31 @@
             <div class="url-body default">
                 
                 
-                    <a href="https://www.autodraw.com/" target="_blank" data-id="" data-url="https://www.autodraw.com/" class="card no-c mb-4"
-                        data-toggle="tooltip" data-placement="bottom" data-original-title="设计AI，智能绘画工具，快速绘制简单的图形和图标。">
+                    <a href="https://plaud.ai/transcribe" target="_blank" data-id="" data-url="https://plaud.ai/transcribe" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="在线语音转文本AI工具，自动语音转写。">
                         
                         <div class="card-body">
                             <div class="url-content d-flex align-items-center">
                                 <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                     
                                     
-                                    <img class="lazy" src="assets/images/logos/autodraw.ico"
-                                        data-src="assets/images/logos/autodraw.ico"
+                                    <img class="lazy" src="assets/images/logos/plaud.ai.ico"
+                                        data-src="assets/images/logos/plaud.ai.ico"
                                         onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
-                                        alt="AutoDraw">
+                                        alt="Plaud.AI">
                                     
                                     
                                 </div>
                                 <div class="url-info flex-fill">
                                     <div class="text-sm overflowClip_1">
-                                        <strong>AutoDraw</strong>
+                                        <strong>Plaud.AI</strong>
                                     </div>
-                                    <p class="overflowClip_1 m-0 text-muted text-xs">设计AI，智能绘画工具，快速绘制简单的图形和图标。</p>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">在线语音转文本AI工具，自动语音转写。</p>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.autodraw.com/" class="togo text-center text-muted is-views" data-id="689"
+                    <a href="https://plaud.ai/transcribe" class="togo text-center text-muted is-views" data-id="689"
                         data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
                         <i class="iconfont icon-goto"></i>
                     </a>
@@ -1733,6 +1812,41 @@
             </div>
         </div>
         
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://www.duolingo.com/" target="_blank" data-id="" data-url="https://www.duolingo.com/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="Duolingo是语音学习工具，可以在用户做错题时用自然语言解释答案和示例，并模拟外语对话。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/www.duolingo.com.ico"
+                                        data-src="assets/images/logos/www.duolingo.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Duolingo">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Duolingo</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">Duolingo是语音学习工具，可以在用户做错题时用自然语言解释答案和示例，并模拟外语对话。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.duolingo.com/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
     </div>
     <br />
     
@@ -1741,8 +1855,8 @@
 
     <div class="d-flex flex-fill">
         <h4 class="text-gray text-lg mb-4">
-            <i class="site-tag iconfont icon-tag icon-lg mr-1" id="43a1dbd84a7b915b2be30d7e54809c8e"></i>
-            AI工作
+            <i class="site-tag iconfont icon-tag icon-lg mr-1" id="466b0cab633cdfce6cad7a7ce0566d76"></i>
+            AI文案
         </h4>
         <div class="flex-fill"></div>
         
@@ -1816,6 +1930,391 @@
                         </div>
                     </a>
                     <a href="https://beta.tome.app/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://www.chatpdf.com/" target="_blank" data-id="" data-url="https://www.chatpdf.com/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="ChatPDF 允许用户使用自然语言与他们的PDF文档进行交互处理。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/www.chatpdf.com.ico"
+                                        data-src="assets/images/logos/www.chatpdf.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="ChatPDF">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>ChatPDF</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">ChatPDF 允许用户使用自然语言与他们的PDF文档进行交互处理。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.chatpdf.com/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://chatexcel.com/" target="_blank" data-id="" data-url="https://chatexcel.com/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="ChatExcel — 首款聊天就能自动处理Excel表格的AI工具。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/chatexcel.com.ico"
+                                        data-src="assets/images/logos/chatexcel.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="ChatExcel">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>ChatExcel</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">ChatExcel — 首款聊天就能自动处理Excel表格的AI工具。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://chatexcel.com/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://quillbot.com/" target="_blank" data-id="" data-url="https://quillbot.com/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="QuillBot是一款集润色、降重、总结功能为一体的科研神器。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/quillbot.com.ico"
+                                        data-src="assets/images/logos/quillbot.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="QuillBot">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>QuillBot</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">QuillBot是一款集润色、降重、总结功能为一体的科研神器。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://quillbot.com/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://www.storylab.com/" target="_blank" data-id="" data-url="https://www.storylab.com/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="Story Lab可以帮助你制作漂亮的Instagram故事。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/www.storylab.com.ico"
+                                        data-src="assets/images/logos/www.storylab.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="StoryLab">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>StoryLab</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">Story Lab可以帮助你制作漂亮的Instagram故事。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.storylab.com/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://www.grammarly.com/" target="_blank" data-id="" data-url="https://www.grammarly.com/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="Grammarly可以自动检测用户所书写的英文是否存在语法、拼写、标点等错误。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/www.grammarly.com.ico"
+                                        data-src="assets/images/logos/www.grammarly.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Grammarly">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Grammarly</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">Grammarly可以自动检测用户所书写的英文是否存在语法、拼写、标点等错误。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.grammarly.com/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://hemingwayapp.com/" target="_blank" data-id="" data-url="https://hemingwayapp.com/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="Hemingway是在线英文写作校对网站，用来检测英语文章的可读性，它通过高亮不同颜色来提醒用户注意修改的程度。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/hemingwayapp.com.ico"
+                                        data-src="assets/images/logos/hemingwayapp.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Hemingwayapp">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Hemingwayapp</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">Hemingway是在线英文写作校对网站，用来检测英语文章的可读性，它通过高亮不同颜色来提醒用户注意修改的程度。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://hemingwayapp.com/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://www.powerthesaurus.org/" target="_blank" data-id="" data-url="https://www.powerthesaurus.org/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="Power Thesaurus是一个快速、方便和全面的在线同义词库，使用简单，无需付费。在搜索栏输入想要查询的单词后，即可显示相关的同义词。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/www.powerthesaurus.org.ico"
+                                        data-src="assets/images/logos/www.powerthesaurus.org.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Power Thesaurus">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Power Thesaurus</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">Power Thesaurus是一个快速、方便和全面的在线同义词库，使用简单，无需付费。在搜索栏输入想要查询的单词后，即可显示相关的同义词。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.powerthesaurus.org/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://tweethunter.io/" target="_blank" data-id="" data-url="https://tweethunter.io/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="Tweet Hunter 是一个人工智能驱动的Twitter灵感写作工具，旨在帮助客户Twitter账号涨粉并从中获利，比如帮助用户尽可能轻松地创建高质量的推文内容。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/tweethunter.io.ico"
+                                        data-src="assets/images/logos/tweethunter.io.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Tweet Hunter">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Tweet Hunter</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">Tweet Hunter 是一个人工智能驱动的Twitter灵感写作工具，旨在帮助客户Twitter账号涨粉并从中获利，比如帮助用户尽可能轻松地创建高质量的推文内容。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://tweethunter.io/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://donotpay.com/" target="_blank" data-id="" data-url="https://donotpay.com/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="DoNotPay 帮助用户快速通过法律服务平台生成法律文件或发送相关请求。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/donotpay.com.ico"
+                                        data-src="assets/images/logos/donotpay.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="DoNotPay">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>DoNotPay</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">DoNotPay 帮助用户快速通过法律服务平台生成法律文件或发送相关请求。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://donotpay.com/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://www.nuance.com/index.html" target="_blank" data-id="" data-url="https://www.nuance.com/index.html" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="Nuance 是医疗临床笔记软件，将医疗工作者的语音对话自动生成笔记、摘要和关键词。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/www.nuance.com.ico"
+                                        data-src="assets/images/logos/www.nuance.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Nuance">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Nuance</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">Nuance 是医疗临床笔记软件，将医疗工作者的语音对话自动生成笔记、摘要和关键词。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.nuance.com/index.html" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://www.salesforce.com/news/press-releases/2023/03/07/einstein-generative-ai/" target="_blank" data-id="" data-url="https://www.salesforce.com/news/press-releases/2023/03/07/einstein-generative-ai/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="Salesforce Einstein GPT 可以根据实时数据和用户需求自动生成个性化的电子邮件、对话和优惠等。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/www.salesforce.com.ico"
+                                        data-src="assets/images/logos/www.salesforce.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Salesforce Einstein GPT">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Salesforce Einstein GPT</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">Salesforce Einstein GPT 可以根据实时数据和用户需求自动生成个性化的电子邮件、对话和优惠等。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.salesforce.com/news/press-releases/2023/03/07/einstein-generative-ai/" class="togo text-center text-muted is-views" data-id="689"
                         data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
                         <i class="iconfont icon-goto"></i>
                     </a>
@@ -2043,6 +2542,164 @@
     
     <div class="d-flex flex-fill">
         <h4 class="text-gray text-lg mb-4">
+            <i class="site-tag iconfont icon-tag icon-lg mr-1" id="366f92545386bb2d5c7d59b3aa2858f9"></i>
+            Prompt指南
+        </h4>
+        
+    </div>
+    
+    <div class="row">
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://github.com/f/awesome-chatgpt-prompts" target="_blank" data-id="" data-url="https://github.com/f/awesome-chatgpt-prompts" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="prompts示例库。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/www.github.com.ico"
+                                        data-src="assets/images/logos/www.github.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Awesome-Chatgpt-Prompts">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Awesome-Chatgpt-Prompts</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">prompts示例库。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/f/awesome-chatgpt-prompts" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://github.com/PlexPt/awesome-chatgpt-prompts-zh" target="_blank" data-id="" data-url="https://github.com/PlexPt/awesome-chatgpt-prompts-zh" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="中文prompts。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/1f9e0.png"
+                                        data-src="assets/images/logos/1f9e0.png"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="ChatGPT中文调教指南">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>ChatGPT中文调教指南</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">中文prompts。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/PlexPt/awesome-chatgpt-prompts-zh" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://www.explainthis.io/zh-hans/chatgpt" target="_blank" data-id="" data-url="https://www.explainthis.io/zh-hans/chatgpt" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="提供精炼过的指令语句，让你充分发挥 ChatGPT 的强大功能。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/explainthis.ico"
+                                        data-src="assets/images/logos/explainthis.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="ChatGPT指令大全">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>ChatGPT指令大全</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">提供精炼过的指令语句，让你充分发挥 ChatGPT 的强大功能。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.explainthis.io/zh-hans/chatgpt" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://vfqxua5lvd.feishu.cn/docx/S6m3dw2IwosKKdxkEGscWDY2nQe" target="_blank" data-id="" data-url="https://vfqxua5lvd.feishu.cn/docx/S6m3dw2IwosKKdxkEGscWDY2nQe" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="ChatGPT身份指令关键词。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/feishu.ico"
+                                        data-src="assets/images/logos/feishu.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="ChatGPT身份指令关键词">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>ChatGPT身份指令关键词</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">ChatGPT身份指令关键词。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://vfqxua5lvd.feishu.cn/docx/S6m3dw2IwosKKdxkEGscWDY2nQe" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+    </div>
+    <br />
+    
+    
+    
+    
+    
+    
+    <div class="d-flex flex-fill">
+        <h4 class="text-gray text-lg mb-4">
             <i class="site-tag iconfont icon-tag icon-lg mr-1" id="8581ce3decc2b20b5a83335954033733"></i>
             Github库
         </h4>
@@ -2125,41 +2782,6 @@
             <div class="url-body default">
                 
                 
-                    <a href="https://github.com/f/awesome-chatgpt-prompts" target="_blank" data-id="" data-url="https://github.com/f/awesome-chatgpt-prompts" class="card no-c mb-4"
-                        data-toggle="tooltip" data-placement="bottom" data-original-title="prompts示例库。">
-                        
-                        <div class="card-body">
-                            <div class="url-content d-flex align-items-center">
-                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
-                                    
-                                    
-                                    <img class="lazy" src="assets/images/logos/github.jpg"
-                                        data-src="assets/images/logos/github.jpg"
-                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
-                                        alt="Awesome-Chatgpt-Prompts">
-                                    
-                                    
-                                </div>
-                                <div class="url-info flex-fill">
-                                    <div class="text-sm overflowClip_1">
-                                        <strong>Awesome-Chatgpt-Prompts</strong>
-                                    </div>
-                                    <p class="overflowClip_1 m-0 text-muted text-xs">prompts示例库。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://github.com/f/awesome-chatgpt-prompts" class="togo text-center text-muted is-views" data-id="689"
-                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
-                        <i class="iconfont icon-goto"></i>
-                    </a>
-            </div>
-        </div>
-        
-        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
-            <div class="url-body default">
-                
-                
                     <a href="https://github.com/microsoft/visual-chatgpt" target="_blank" data-id="" data-url="https://github.com/microsoft/visual-chatgpt" class="card no-c mb-4"
                         data-toggle="tooltip" data-placement="bottom" data-original-title="使用Visual Foundation Models进行交谈、绘图和编辑。">
                         
@@ -2168,8 +2790,8 @@
                                 <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                     
                                     
-                                    <img class="lazy" src="assets/images/logos/github.jpg"
-                                        data-src="assets/images/logos/github.jpg"
+                                    <img class="lazy" src="assets/images/logos/www.github.com.ico"
+                                        data-src="assets/images/logos/www.github.com.ico"
                                         onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
                                         alt="Visual-Chatgpt">
                                     
@@ -2195,41 +2817,6 @@
             <div class="url-body default">
                 
                 
-                    <a href="https://github.com/PlexPt/awesome-chatgpt-prompts-zh" target="_blank" data-id="" data-url="https://github.com/PlexPt/awesome-chatgpt-prompts-zh" class="card no-c mb-4"
-                        data-toggle="tooltip" data-placement="bottom" data-original-title="中文prompts。">
-                        
-                        <div class="card-body">
-                            <div class="url-content d-flex align-items-center">
-                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
-                                    
-                                    
-                                    <img class="lazy" src="assets/images/logos/1f9e0.png"
-                                        data-src="assets/images/logos/1f9e0.png"
-                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
-                                        alt="ChatGPT中文调教指南">
-                                    
-                                    
-                                </div>
-                                <div class="url-info flex-fill">
-                                    <div class="text-sm overflowClip_1">
-                                        <strong>ChatGPT中文调教指南</strong>
-                                    </div>
-                                    <p class="overflowClip_1 m-0 text-muted text-xs">中文prompts。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://github.com/PlexPt/awesome-chatgpt-prompts-zh" class="togo text-center text-muted is-views" data-id="689"
-                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
-                        <i class="iconfont icon-goto"></i>
-                    </a>
-            </div>
-        </div>
-        
-        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
-            <div class="url-body default">
-                
-                
                     <a href="https://github.com/openai/openai-cookbook" target="_blank" data-id="" data-url="https://github.com/openai/openai-cookbook" class="card no-c mb-4"
                         data-toggle="tooltip" data-placement="bottom" data-original-title="openai官方API使用案例和说明文档。">
                         
@@ -2238,8 +2825,8 @@
                                 <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                     
                                     
-                                    <img class="lazy" src="assets/images/logos/github.jpg"
-                                        data-src="assets/images/logos/github.jpg"
+                                    <img class="lazy" src="assets/images/logos/www.github.com.ico"
+                                        data-src="assets/images/logos/www.github.com.ico"
                                         onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
                                         alt="Openai-Cookbook">
                                     
@@ -2308,8 +2895,8 @@
                                 <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                     
                                     
-                                    <img class="lazy" src="assets/images/logos/github.jpg"
-                                        data-src="assets/images/logos/github.jpg"
+                                    <img class="lazy" src="assets/images/logos/www.github.com.ico"
+                                        data-src="assets/images/logos/www.github.com.ico"
                                         onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
                                         alt="Awesome-Chatgpt">
                                     
@@ -2378,8 +2965,8 @@
                                 <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                     
                                     
-                                    <img class="lazy" src="assets/images/logos/edge.png"
-                                        data-src="assets/images/logos/edge.png"
+                                    <img class="lazy" src="assets/images/logos/edge.webp"
+                                        data-src="assets/images/logos/edge.webp"
                                         onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
                                         alt="EdgeGPT">
                                     
@@ -2448,8 +3035,8 @@
                                 <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                     
                                     
-                                    <img class="lazy" src="assets/images/logos/github.jpg"
-                                        data-src="assets/images/logos/github.jpg"
+                                    <img class="lazy" src="assets/images/logos/www.github.com.ico"
+                                        data-src="assets/images/logos/www.github.com.ico"
                                         onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
                                         alt="Carrot">
                                     
@@ -2483,8 +3070,8 @@
                                 <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                     
                                     
-                                    <img class="lazy" src="assets/images/logos/github.jpg"
-                                        data-src="assets/images/logos/github.jpg"
+                                    <img class="lazy" src="assets/images/logos/www.github.com.ico"
+                                        data-src="assets/images/logos/www.github.com.ico"
                                         onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
                                         alt="ChatPaper">
                                     
@@ -2693,8 +3280,8 @@
                                 <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                     
                                     
-                                    <img class="lazy" src="assets/images/logos/github.jpg"
-                                        data-src="assets/images/logos/github.jpg"
+                                    <img class="lazy" src="assets/images/logos/www.github.com.ico"
+                                        data-src="assets/images/logos/www.github.com.ico"
                                         onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
                                         alt="Openai-Translator">
                                     
@@ -2763,8 +3350,8 @@
                                 <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                     
                                     
-                                    <img class="lazy" src="assets/images/logos/github.jpg"
-                                        data-src="assets/images/logos/github.jpg"
+                                    <img class="lazy" src="assets/images/logos/www.github.com.ico"
+                                        data-src="assets/images/logos/www.github.com.ico"
                                         onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
                                         alt="Chatgpt-Web">
                                     
@@ -2833,8 +3420,8 @@
                                 <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                     
                                     
-                                    <img class="lazy" src="assets/images/logos/github.jpg"
-                                        data-src="assets/images/logos/github.jpg"
+                                    <img class="lazy" src="assets/images/logos/www.github.com.ico"
+                                        data-src="assets/images/logos/www.github.com.ico"
                                         onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
                                         alt="Chat-With-GPT">
                                     
@@ -2996,6 +3583,41 @@
             </div>
         </div>
         
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://github.com/bigemon/ChatGPT-ToolBox" target="_blank" data-id="" data-url="https://github.com/bigemon/ChatGPT-ToolBox" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="ChatGPT-ToolBox 可以导入导出对话内容，可以屏蔽ChatGPT的风险提示。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/www.github.com.ico"
+                                        data-src="assets/images/logos/www.github.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="ChatGPT-ToolBox">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>ChatGPT-ToolBox</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">ChatGPT-ToolBox 可以导入导出对话内容，可以屏蔽ChatGPT的风险提示。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/bigemon/ChatGPT-ToolBox" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
     </div>
     <br />
     
@@ -3096,8 +3718,8 @@
                                 <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                     
                                     
-                                    <img class="lazy" src="assets/images/logos/github.jpg"
-                                        data-src="assets/images/logos/github.jpg"
+                                    <img class="lazy" src="assets/images/logos/www.github.com.ico"
+                                        data-src="assets/images/logos/www.github.com.ico"
                                         onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
                                         alt="GitHub">
                                     
