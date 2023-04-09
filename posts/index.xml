@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>文章列表 on AI 网址导航 AI-tools</title>
+    <link>https://www.aiprojectstools.com/posts/</link>
+    <description>Recent content in 文章列表 on AI 网址导航 AI-tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 09 Apr 2023 10:23:08 +0800</lastBuildDate><atom:link href="https://www.aiprojectstools.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Demo</title>
+      <link>https://www.aiprojectstools.com/posts/first-demo/</link>
+      <pubDate>Sun, 09 Apr 2023 12:04:28 +0800</pubDate>
+      
+      <guid>https://www.aiprojectstools.com/posts/first-demo/</guid>
+      <description>this is first blog </description>
+    </item>
+    
+  </channel>
+</rss>

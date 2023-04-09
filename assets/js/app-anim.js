@@ -311,7 +311,7 @@
     $('#sidebar-switch').on('click',function(){
         $('#sidebar').removeClass('mini-sidebar');
 	//221024: 调整左导航展开时,点击图标锚定定位失效
-        //$('.sidebar-nav .change-href').attr('href','javascript:;');
+        // $('.sidebar-nav .change-href').attr('href','javascript:;');
 
     }); 
  
@@ -341,7 +341,7 @@
         else if($(window).width() < 767.98 && $('#sidebar').hasClass('mini-sidebar')){
             $('#sidebar').removeClass('mini-sidebar');
             //221024: 调整左导航展开时,点击图标锚定定位失效
-            //$('.sidebar-nav .change-href').attr('href','javascript:;');
+            // $('.sidebar-nav .change-href').attr('href','javascript:;');
             isMobileMin = true;
             isMin = false;
         }
@@ -375,7 +375,7 @@
         if (!$('.header-mini-btn input[type="checkbox"]').prop("checked")) {
             $('.sidebar-nav').removeClass('mini-sidebar');
 	    //221024: 调整左导航展开时,点击图标锚定定位失效
-            //$('.sidebar-nav .change-href').attr('href','javascript:;');
+            // $('.sidebar-nav .change-href').attr('href','javascript:;');
             $('.sidebar-menu ul ul').css("display", "none");
 	    console.log('checked=true');
             if(isNoAnim){
