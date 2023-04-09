@@ -522,25 +522,78 @@
 
 
 
+<div class="container">
+  
+  <main>
+    <article>
+      <h2>First Demo</h2>
+      <p>
+        <h3 id="this-is-first-blog">this is first blog</h3>
 
-    <h1 class="mt-5" align="center">First Demo</h1>
+        </p>
+      </article>
     
-    
-    <div class="container-fluid p-0 content">
-        <div class="container-fluid p-0 w-100"></div>
-        <div class="row">
-          <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-            <p style="line-height: 1.5;">
-            
-            <h3 id="this-is-first-blog">this is first blog</h3>
-
-            </p>
-          </div>
-        </div>
-      </div>
-
+  </main>
+  
+  
+</div>
 
 <style>
+   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+ 
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+ 
+.author {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+ 
+.date {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+ 
+.content {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+ 
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: 28px;
+  }
+  
+  .author, .date, .content {
+    font-size: 14px;
+  }
+}
     .content {
         font-size: 1.25rem;
     }
