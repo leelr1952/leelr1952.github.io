@@ -84,7 +84,10 @@
                                 
                                     
                                     <li class="sidebar-item">
-                                        <a href="#6cd2cb4522f6b45d481c17005190bcc3" class="smooth change-href" data-change="#6cd2cb4522f6b45d481c17005190bcc3">    
+                                        
+                                        <a href="#6cd2cb4522f6b45d481c17005190bcc3" class="smooth change-href" data-change="#6cd2cb4522f6b45d481c17005190bcc3">
+                                            
+                                            
                                             <i class="fas fa-robot icon-fw icon-lg mr-2"></i>
                                             <span>AI工具</span>
                                             <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
@@ -93,13 +96,27 @@
                                             
                                             <li><a href="#6cd2cb4522f6b45d481c17005190bcc3" class="smooth"><span>热门AI</span></a></li>
                                             
+
+                                            
+                                            <li><a href="#e77319d4dba066fc862df817a401a03a" class="smooth"><span>AI对话</span></a></li>
+                                            
+
+                                            
                                             <li><a href="#ddcd9b9d106dcb0f3f5690c76ec7bece" class="smooth"><span>AI绘画</span></a></li>
+                                            
+
                                             
                                             <li><a href="#74ef64a0b7039461aae92a682e52aec3" class="smooth"><span>AI视频</span></a></li>
                                             
+
+                                            
                                             <li><a href="#d2ec62e55d8567d2cfc9e6c30c6781e6" class="smooth"><span>AI音频</span></a></li>
                                             
+
+                                            
                                             <li><a href="#466b0cab633cdfce6cad7a7ce0566d76" class="smooth"><span>AI文案</span></a></li>
+                                            
+
                                             
                                         </ul>
                                     </li> 
@@ -108,6 +125,7 @@
                                     
                                     <li class="sidebar-item">
                                         <a href="#366f92545386bb2d5c7d59b3aa2858f9" class="smooth">
+                                        
                                             <i class="fas fa-book fa-lg icon-fw icon-lg mr-2"></i>
                                             <span>Prompt指南</span>
                                         </a>
@@ -117,6 +135,7 @@
                                     
                                     <li class="sidebar-item">
                                         <a href="#8581ce3decc2b20b5a83335954033733" class="smooth">
+                                        
                                             <i class="fab fa-github fa-lg icon-fw icon-lg mr-2"></i>
                                             <span>Github库</span>
                                         </a>
@@ -126,6 +145,7 @@
                                     
                                     <li class="sidebar-item">
                                         <a href="#58ba1baa4d39e50debed2a7eff9d069f" class="smooth">
+                                        
                                             <i class="fab fa-twitter fa-lg icon-fw icon-lg mr-2"></i>
                                             <span>社交媒体</span>
                                         </a>
@@ -512,59 +532,319 @@
 <div id="content" class="content-site customize-site">
     
     <div class="d-flex flex-fill">
-        <h4 class="text-gray text-lg mb-4">
-            <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
-            热榜资讯
-        </h4>
-        <div class="flex-fill"></div>
+    <h4 class="text-gray text-lg mb-4">
+        <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+        热榜资讯
+    </h4>
+    <div class="flex-fill"></div>
+    
+</div>
+<div class="overflow-x-auto hot-search-panel mb-3 pb-2" style="margin:0 -.5rem;padding:0 .5rem">
+    <div class="row row-sm hot-search">
         
-    </div>
-    <div class="overflow-x-auto hot-search-panel mb-3 pb-2" style="margin:0 -.5rem;padding:0 .5rem">
-        <div class="row row-sm hot-search">
-            
-            <div class="col col-md col-lg">
-                <div class="card hot-card mb-0 rounded-xl">
-                    <div class="card-header widget-header d-flex align-items-center"
-                        style="background-color:transparent;border-bottom:0">
-                        <span><img class="hot-ico"
-                                src="https://api.uomg.com/api/get.favicon?url=http://www.baidu.com"
-                                alt="百度热点"><span class="title-1631797527">百度热点</span></span>
-                        <span class="ml-auto d-none d-md-block text-xs slug-1631797527"></span>
+        <div class="col col-md col-lg">
+            <div class="card hot-card mb-0 rounded-xl">
+                <div class="card-header widget-header d-flex align-items-center"
+                    style="background-color:transparent;border-bottom:0">
+                    <span><img class="hot-ico"
+                            src="https://api.uomg.com/api/get.favicon?url=http://www.baidu.com"
+                            alt="百度热点"><span class="title-1631797527">百度热点</span></span>
+                    <span class="ml-auto d-none d-md-block text-xs slug-1631797527"></span>
+                </div>
+                <div class="card-body pb-3 pt-0">
+                    <div class="overflow-auto hot-body">
+                        <ul id="hot_news-1631797527" style="padding-left: 0px;">
+                        </ul>
                     </div>
-                    <div class="card-body pb-3 pt-0">
-                        <div class="overflow-auto hot-body">
-                            <ul id="hot_news-1631797527" style="padding-left: 0px;">
-                            </ul>
-                        </div>
-                        <div class="d-flex text-xs text-muted pt-2 mb-n2">
+                    <div class="d-flex text-xs text-muted pt-2 mb-n2">
+                        
+                        <div class="flex-fill"></div>
+                        <span><a href="javascript:" id="hot-lod-1631797527" title='刷新' style="color:#6c757d"><i
+                                    class="iconfont icon-refresh text-md"></i></a></span>
+                    </div>
+                </div>
+            </div>
+            <div id="hot-loading-1631797527" class="ajax-loading text-center rounded"
+                style="position:absolute;display:flex;width:100%;left:0;top:0;bottom:0;background:rgba(125,125,125,.5)">
+                <div id="hot-success-1631797527" class="col align-self-center"><i
+                        class="iconfont icon-loading icon-spin icon-2x"></i></div>
+            </div>
+            <script>
+                (function ($) {
+                    var ruleId = "100000";
+                    getList(ruleId);
+
+                    $('#hot-lod-1631797527').on('click', function () {
+                        $(this).children('i').addClass('icon-spin');
+                        $("#hot-success-1631797527").html('<i class="iconfont icon-loading icon-spin icon-2x"></i>');
+                        $("#hot-loading-1631797527").fadeIn(200);
+                        getList(ruleId);
+                    });
+                    function getList(id) {
+                        $.get("https://api.vvhan.com/api/hotlist?type=baiduRD", function (response, status) {
+                            var html = '';
+                            var data = response.data;
+
+                            for (var i = 0; i < data.length; i++) {
+                                html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['title'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
+                            }
                             
-                            <div class="flex-fill"></div>
-                            <span><a href="javascript:" id="hot-lod-1631797527" title='刷新' style="color:#6c757d"><i
-                                        class="iconfont icon-refresh text-md"></i></a></span>
-                        </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            $("#hot-loading-1631797527").fadeOut(200);
+                            $('#hot-lod-1631797527').children('i').removeClass('icon-spin');
+                            $("#hot_news-1631797527").html(html);
+                        }).fail(function () {
+                            $('#hot-lod-1631797527').children('i').removeClass('icon-spin');
+                            $("#hot-success-1631797527").show(200).html('获取失败，请再试一次！').parent().delay(3500).fadeOut(200);
+                        });
+                    }
+                })(jQuery)
+            </script>
+        </div>
+        
+
+        
+        <div class="col col-md col-lg">
+            <div class="card hot-card mb-0 rounded-xl">
+                <div class="card-header widget-header d-flex align-items-center"
+                    style="background-color:transparent;border-bottom:0">
+                    <span><img class="hot-ico"
+                            src="https://api.uomg.com/api/get.favicon?url=http://www.weibo.com"
+                            alt="微博热搜"><span class="title-1237381323">微博热搜</span></span>
+                    <span class="ml-auto d-none d-md-block text-xs slug-1237381323"></span>
+                </div>
+                <div class="card-body pb-3 pt-0">
+                    <div class="overflow-auto hot-body">
+                        <ul id="hot_news-1237381323" style="padding-left: 0px;">
+                        </ul>
+                    </div>
+                    <div class="d-flex text-xs text-muted pt-2 mb-n2">
+                        
+                        <div class="flex-fill"></div>
+                        <span><a href="javascript:" id="hot-lod-1237381323" title='刷新' style="color:#6c757d"><i
+                                    class="iconfont icon-refresh text-md"></i></a></span>
                     </div>
                 </div>
-                <div id="hot-loading-1631797527" class="ajax-loading text-center rounded"
-                    style="position:absolute;display:flex;width:100%;left:0;top:0;bottom:0;background:rgba(125,125,125,.5)">
-                    <div id="hot-success-1631797527" class="col align-self-center"><i
-                            class="iconfont icon-loading icon-spin icon-2x"></i></div>
-                </div>
-                <script>
+            </div>
+            <div id="hot-loading-1237381323" class="ajax-loading text-center rounded"
+                style="position:absolute;display:flex;width:100%;left:0;top:0;bottom:0;background:rgba(125,125,125,.5)">
+                <div id="hot-success-1237381323" class="col align-self-center"><i
+                        class="iconfont icon-loading icon-spin icon-2x"></i></div>
+            </div>
+            <script>
                     (function ($) {
-                        var ruleId = "100000";
+                        var ruleId = "100002";
                         getList(ruleId);
 
-                        $('#hot-lod-1631797527').on('click', function () {
+                        $('#hot-lod-1237381323').on('click', function () {
                             $(this).children('i').addClass('icon-spin');
-                            $("#hot-success-1631797527").html('<i class="iconfont icon-loading icon-spin icon-2x"></i>');
-                            $("#hot-loading-1631797527").fadeIn(200);
+                            $("#hot-success-1237381323").html('<i class="iconfont icon-loading icon-spin icon-2x"></i>');
+                            $("#hot-loading-1237381323").fadeIn(200);
                             getList(ruleId);
                         });
                         function getList(id) {
-                            $.get("https://api.vvhan.com/api/hotlist?type=baiduRD", function (response, status) {
+                            $.get("https://api.vvhan.com/api/hotlist?type=wbHot", function (response, status) {
                                 var html = '';
                                 var data = response.data;
+                                
+                                for (var i = 0; i < data.length; i++) {
+                                    html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['title'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
+                                }
+                                
+                                $("#hot-loading-1237381323").fadeOut(200);
+                                $('#hot-lod-1237381323').children('i').removeClass('icon-spin');
+                                $("#hot_news-1237381323").html(html);
+                            }).fail(function () {
+                                $('#hot-lod-1237381323').children('i').removeClass('icon-spin');
+                                $("#hot-success-1237381323").show(200).html('获取失败，请再试一次！').parent().delay(3500).fadeOut(200);
+                            });
+                        }
+                    })(jQuery)
+            </script>
+        </div>
+        
 
+        
+        <div class="col col-md col-lg">
+            <div class="card hot-card mb-0 rounded-xl">
+                <div class="card-header widget-header d-flex align-items-center"
+                    style="background-color:transparent;border-bottom:0">
+                    <span><img class="hot-ico"
+                            src="https://api.uomg.com/api/get.favicon?url=http://www.zhihu.com"
+                            alt="知乎热榜"><span class="title-2081089809">知乎热榜</span></span>
+                    <span class="ml-auto d-none d-md-block text-xs slug-2081089809"></span>
+                </div>
+                <div class="card-body pb-3 pt-0">
+                    <div class="overflow-auto hot-body">
+                        <ul id="hot_news-2081089809" style="padding-left: 0px;">
+                        </ul>
+                    </div>
+                    <div class="d-flex text-xs text-muted pt-2 mb-n2">
+                        
+                        <div class="flex-fill"></div>
+                        <span><a href="javascript:" id="hot-lod-2081089809" title='刷新' style="color:#6c757d"><i
+                                    class="iconfont icon-refresh text-md"></i></a></span>
+                    </div>
+                </div>
+            </div>
+            <div id="hot-loading-2081089809" class="ajax-loading text-center rounded"
+                style="position:absolute;display:flex;width:100%;left:0;top:0;bottom:0;background:rgba(125,125,125,.5)">
+                <div id="hot-success-2081089809" class="col align-self-center"><i
+                        class="iconfont icon-loading icon-spin icon-2x"></i></div>
+            </div>
+            <script>
+                    (function ($) {
+                        var ruleId = "100018";
+                        getList(ruleId);
+
+                        $('#hot-lod-2081089809').on('click', function () {
+                            $(this).children('i').addClass('icon-spin');
+                            $("#hot-success-2081089809").html('<i class="iconfont icon-loading icon-spin icon-2x"></i>');
+                            $("#hot-loading-2081089809").fadeIn(200);
+                            getList(ruleId);
+                        });
+                        function getList(id) {
+                            $.get("https://tenapi.cn/v2/zhihuhot", function (response, status) {
+                                var html = '';
+                                var data = JSON.parse(response).data;
+                                
+                                for (var i = 0; i < data.length; i++) {
+                                    html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['name'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
+                                }
+                                
+                                $("#hot-loading-2081089809").fadeOut(200);
+                                $('#hot-lod-2081089809').children('i').removeClass('icon-spin');
+                                $("#hot_news-2081089809").html(html);
+                            }).fail(function () {
+                                $('#hot-lod-2081089809').children('i').removeClass('icon-spin');
+                                $("#hot-success-2081089809").show(200).html('获取失败，请再试一次！').parent().delay(3500).fadeOut(200);
+                            });
+                        }
+                    })(jQuery)
+            </script>
+        </div>
+        
+
+        
+        <div class="col col-md col-lg">
+            <div class="card hot-card mb-0 rounded-xl">
+                <div class="card-header widget-header d-flex align-items-center"
+                    style="background-color:transparent;border-bottom:0">
+                    <span><img class="hot-ico"
+                            src="https://api.uomg.com/api/get.favicon?url=http://www.ithome.com"
+                            alt="IT最新资讯"><span class="title-1577607373">IT最新资讯</span></span>
+                    <span class="ml-auto d-none d-md-block text-xs slug-1577607373"></span>
+                </div>
+                <div class="card-body pb-3 pt-0">
+                    <div class="overflow-auto hot-body">
+                        <ul id="hot_news-1577607373" style="padding-left: 0px;">
+                        </ul>
+                    </div>
+                    <div class="d-flex text-xs text-muted pt-2 mb-n2">
+                        
+                        <div class="flex-fill"></div>
+                        <span><a href="javascript:" id="hot-lod-1577607373" title='刷新' style="color:#6c757d"><i
+                                    class="iconfont icon-refresh text-md"></i></a></span>
+                    </div>
+                </div>
+            </div>
+            <div id="hot-loading-1577607373" class="ajax-loading text-center rounded"
+                style="position:absolute;display:flex;width:100%;left:0;top:0;bottom:0;background:rgba(125,125,125,.5)">
+                <div id="hot-success-1577607373" class="col align-self-center"><i
+                        class="iconfont icon-loading icon-spin icon-2x"></i></div>
+            </div>
+            <script>
+                    (function ($) {
+                        var ruleId = "100020";
+                        getList(ruleId);
+
+                        $('#hot-lod-1577607373').on('click', function () {
+                            $(this).children('i').addClass('icon-spin');
+                            $("#hot-success-1577607373").html('<i class="iconfont icon-loading icon-spin icon-2x"></i>');
+                            $("#hot-loading-1577607373").fadeIn(200);
+                            getList(ruleId);
+                        });
+                        function getList(id) {
+                            $.get("https://api.vvhan.com/api/hotlist?type=itNews", function (response, status) {
+                                var html = '';
+                                var data = response.data;
+                                for (var i = 0; i < data.length; i++) {
+                                    html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['title'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
+                                }
+                                
+                                $("#hot-loading-1577607373").fadeOut(200);
+                                $('#hot-lod-1577607373').children('i').removeClass('icon-spin');
+                                $("#hot_news-1577607373").html(html);
+                            }).fail(function () {
+                                $('#hot-lod-1577607373').children('i').removeClass('icon-spin');
+                                $("#hot-success-1577607373").show(200).html('获取失败，请再试一次！').parent().delay(3500).fadeOut(200);
+                            });
+                        }
+                    })(jQuery)
+            </script>
+        </div>
+        
+
+        
+        <div class="col col-md col-lg">
+            <div class="card hot-card mb-0 rounded-xl">
+                <div class="card-header widget-header d-flex align-items-center"
+                    style="background-color:transparent;border-bottom:0">
+                    <span><img class="hot-ico"
+                            src="https://api.uomg.com/api/get.favicon?url=http://www.sspai.com"
+                            alt="少数派热榜"><span class="title-18791966">少数派热榜</span></span>
+                    <span class="ml-auto d-none d-md-block text-xs slug-18791966"></span>
+                </div>
+                <div class="card-body pb-3 pt-0">
+                    <div class="overflow-auto hot-body">
+                        <ul id="hot_news-18791966" style="padding-left: 0px;">
+                        </ul>
+                    </div>
+                    <div class="d-flex text-xs text-muted pt-2 mb-n2">
+                        
+                        <div class="flex-fill"></div>
+                        <span><a href="javascript:" id="hot-lod-18791966" title='刷新' style="color:#6c757d"><i
+                                    class="iconfont icon-refresh text-md"></i></a></span>
+                    </div>
+                </div>
+            </div>
+            <div id="hot-loading-18791966" class="ajax-loading text-center rounded"
+                style="position:absolute;display:flex;width:100%;left:0;top:0;bottom:0;background:rgba(125,125,125,.5)">
+                <div id="hot-success-18791966" class="col align-self-center"><i
+                        class="iconfont icon-loading icon-spin icon-2x"></i></div>
+            </div>
+            <script>
+                    (function ($) {
+                        var ruleId = "100007";
+                        getList(ruleId);
+
+                        $('#hot-lod-18791966').on('click', function () {
+                            $(this).children('i').addClass('icon-spin');
+                            $("#hot-success-18791966").html('<i class="iconfont icon-loading icon-spin icon-2x"></i>');
+                            $("#hot-loading-18791966").fadeIn(200);
+                            getList(ruleId);
+                        });
+                        function getList(id) {
+                            $.get("https://api.vvhan.com/api/hotlist?type=ssPai", function (response, status) {
+                                var html = '';
+                                var data = response.data;
                                 for (var i = 0; i < data.length; i++) {
                                     html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['title'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
                                 }
@@ -587,287 +867,27 @@
                                 
                                 
                                 
-                                $("#hot-loading-1631797527").fadeOut(200);
-                                $('#hot-lod-1631797527').children('i').removeClass('icon-spin');
-                                $("#hot_news-1631797527").html(html);
+                                $("#hot-loading-18791966").fadeOut(200);
+                                $('#hot-lod-18791966').children('i').removeClass('icon-spin');
+                                $("#hot_news-18791966").html(html);
                             }).fail(function () {
-                                $('#hot-lod-1631797527').children('i').removeClass('icon-spin');
-                                $("#hot-success-1631797527").show(200).html('获取失败，请再试一次！').parent().delay(3500).fadeOut(200);
+                                $('#hot-lod-18791966').children('i').removeClass('icon-spin');
+                                $("#hot-success-18791966").show(200).html('获取失败，请再试一次！').parent().delay(3500).fadeOut(200);
                             });
                         }
                     })(jQuery)
-                </script>
-            </div>
-            
-
-            
-            <div class="col col-md col-lg">
-                <div class="card hot-card mb-0 rounded-xl">
-                    <div class="card-header widget-header d-flex align-items-center"
-                        style="background-color:transparent;border-bottom:0">
-                        <span><img class="hot-ico"
-                                src="https://api.uomg.com/api/get.favicon?url=http://www.weibo.com"
-                                alt="微博热搜"><span class="title-1237381323">微博热搜</span></span>
-                        <span class="ml-auto d-none d-md-block text-xs slug-1237381323"></span>
-                    </div>
-                    <div class="card-body pb-3 pt-0">
-                        <div class="overflow-auto hot-body">
-                            <ul id="hot_news-1237381323" style="padding-left: 0px;">
-                            </ul>
-                        </div>
-                        <div class="d-flex text-xs text-muted pt-2 mb-n2">
-                            
-                            <div class="flex-fill"></div>
-                            <span><a href="javascript:" id="hot-lod-1237381323" title='刷新' style="color:#6c757d"><i
-                                        class="iconfont icon-refresh text-md"></i></a></span>
-                        </div>
-                    </div>
-                </div>
-                <div id="hot-loading-1237381323" class="ajax-loading text-center rounded"
-                    style="position:absolute;display:flex;width:100%;left:0;top:0;bottom:0;background:rgba(125,125,125,.5)">
-                    <div id="hot-success-1237381323" class="col align-self-center"><i
-                            class="iconfont icon-loading icon-spin icon-2x"></i></div>
-                </div>
-                <script>
-                        (function ($) {
-                            var ruleId = "100002";
-                            getList(ruleId);
-
-                            $('#hot-lod-1237381323').on('click', function () {
-                                $(this).children('i').addClass('icon-spin');
-                                $("#hot-success-1237381323").html('<i class="iconfont icon-loading icon-spin icon-2x"></i>');
-                                $("#hot-loading-1237381323").fadeIn(200);
-                                getList(ruleId);
-                            });
-                            function getList(id) {
-                                $.get("https://api.vvhan.com/api/hotlist?type=wbHot", function (response, status) {
-                                    var html = '';
-                                    var data = response.data;
-                                    
-                                    for (var i = 0; i < data.length; i++) {
-                                        html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['title'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
-                                    }
-                                    
-                                    $("#hot-loading-1237381323").fadeOut(200);
-                                    $('#hot-lod-1237381323').children('i').removeClass('icon-spin');
-                                    $("#hot_news-1237381323").html(html);
-                                }).fail(function () {
-                                    $('#hot-lod-1237381323').children('i').removeClass('icon-spin');
-                                    $("#hot-success-1237381323").show(200).html('获取失败，请再试一次！').parent().delay(3500).fadeOut(200);
-                                });
-                            }
-                        })(jQuery)
-                </script>
-            </div>
-            
-
-            
-            <div class="col col-md col-lg">
-                <div class="card hot-card mb-0 rounded-xl">
-                    <div class="card-header widget-header d-flex align-items-center"
-                        style="background-color:transparent;border-bottom:0">
-                        <span><img class="hot-ico"
-                                src="https://api.uomg.com/api/get.favicon?url=http://www.zhihu.com"
-                                alt="知乎热榜"><span class="title-2081089809">知乎热榜</span></span>
-                        <span class="ml-auto d-none d-md-block text-xs slug-2081089809"></span>
-                    </div>
-                    <div class="card-body pb-3 pt-0">
-                        <div class="overflow-auto hot-body">
-                            <ul id="hot_news-2081089809" style="padding-left: 0px;">
-                            </ul>
-                        </div>
-                        <div class="d-flex text-xs text-muted pt-2 mb-n2">
-                            
-                            <div class="flex-fill"></div>
-                            <span><a href="javascript:" id="hot-lod-2081089809" title='刷新' style="color:#6c757d"><i
-                                        class="iconfont icon-refresh text-md"></i></a></span>
-                        </div>
-                    </div>
-                </div>
-                <div id="hot-loading-2081089809" class="ajax-loading text-center rounded"
-                    style="position:absolute;display:flex;width:100%;left:0;top:0;bottom:0;background:rgba(125,125,125,.5)">
-                    <div id="hot-success-2081089809" class="col align-self-center"><i
-                            class="iconfont icon-loading icon-spin icon-2x"></i></div>
-                </div>
-                <script>
-                        (function ($) {
-                            var ruleId = "100018";
-                            getList(ruleId);
-
-                            $('#hot-lod-2081089809').on('click', function () {
-                                $(this).children('i').addClass('icon-spin');
-                                $("#hot-success-2081089809").html('<i class="iconfont icon-loading icon-spin icon-2x"></i>');
-                                $("#hot-loading-2081089809").fadeIn(200);
-                                getList(ruleId);
-                            });
-                            function getList(id) {
-                                $.get("https://tenapi.cn/v2/zhihuhot", function (response, status) {
-                                    var html = '';
-                                    var data = JSON.parse(response).data;
-                                    
-                                    for (var i = 0; i < data.length; i++) {
-                                        html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['name'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
-                                    }
-                                    
-                                    $("#hot-loading-2081089809").fadeOut(200);
-                                    $('#hot-lod-2081089809').children('i').removeClass('icon-spin');
-                                    $("#hot_news-2081089809").html(html);
-                                }).fail(function () {
-                                    $('#hot-lod-2081089809').children('i').removeClass('icon-spin');
-                                    $("#hot-success-2081089809").show(200).html('获取失败，请再试一次！').parent().delay(3500).fadeOut(200);
-                                });
-                            }
-                        })(jQuery)
-                </script>
-            </div>
-            
-
-            
-            <div class="col col-md col-lg">
-                <div class="card hot-card mb-0 rounded-xl">
-                    <div class="card-header widget-header d-flex align-items-center"
-                        style="background-color:transparent;border-bottom:0">
-                        <span><img class="hot-ico"
-                                src="https://api.uomg.com/api/get.favicon?url=http://www.ithome.com"
-                                alt="IT最新资讯"><span class="title-1577607373">IT最新资讯</span></span>
-                        <span class="ml-auto d-none d-md-block text-xs slug-1577607373"></span>
-                    </div>
-                    <div class="card-body pb-3 pt-0">
-                        <div class="overflow-auto hot-body">
-                            <ul id="hot_news-1577607373" style="padding-left: 0px;">
-                            </ul>
-                        </div>
-                        <div class="d-flex text-xs text-muted pt-2 mb-n2">
-                            
-                            <div class="flex-fill"></div>
-                            <span><a href="javascript:" id="hot-lod-1577607373" title='刷新' style="color:#6c757d"><i
-                                        class="iconfont icon-refresh text-md"></i></a></span>
-                        </div>
-                    </div>
-                </div>
-                <div id="hot-loading-1577607373" class="ajax-loading text-center rounded"
-                    style="position:absolute;display:flex;width:100%;left:0;top:0;bottom:0;background:rgba(125,125,125,.5)">
-                    <div id="hot-success-1577607373" class="col align-self-center"><i
-                            class="iconfont icon-loading icon-spin icon-2x"></i></div>
-                </div>
-                <script>
-                        (function ($) {
-                            var ruleId = "100020";
-                            getList(ruleId);
-
-                            $('#hot-lod-1577607373').on('click', function () {
-                                $(this).children('i').addClass('icon-spin');
-                                $("#hot-success-1577607373").html('<i class="iconfont icon-loading icon-spin icon-2x"></i>');
-                                $("#hot-loading-1577607373").fadeIn(200);
-                                getList(ruleId);
-                            });
-                            function getList(id) {
-                                $.get("https://api.vvhan.com/api/hotlist?type=itNews", function (response, status) {
-                                    var html = '';
-                                    var data = response.data;
-                                    for (var i = 0; i < data.length; i++) {
-                                        html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['title'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
-                                    }
-                                    
-                                    $("#hot-loading-1577607373").fadeOut(200);
-                                    $('#hot-lod-1577607373').children('i').removeClass('icon-spin');
-                                    $("#hot_news-1577607373").html(html);
-                                }).fail(function () {
-                                    $('#hot-lod-1577607373').children('i').removeClass('icon-spin');
-                                    $("#hot-success-1577607373").show(200).html('获取失败，请再试一次！').parent().delay(3500).fadeOut(200);
-                                });
-                            }
-                        })(jQuery)
-                </script>
-            </div>
-            
-
-            
-            <div class="col col-md col-lg">
-                <div class="card hot-card mb-0 rounded-xl">
-                    <div class="card-header widget-header d-flex align-items-center"
-                        style="background-color:transparent;border-bottom:0">
-                        <span><img class="hot-ico"
-                                src="https://api.uomg.com/api/get.favicon?url=http://www.sspai.com"
-                                alt="少数派热榜"><span class="title-18791966">少数派热榜</span></span>
-                        <span class="ml-auto d-none d-md-block text-xs slug-18791966"></span>
-                    </div>
-                    <div class="card-body pb-3 pt-0">
-                        <div class="overflow-auto hot-body">
-                            <ul id="hot_news-18791966" style="padding-left: 0px;">
-                            </ul>
-                        </div>
-                        <div class="d-flex text-xs text-muted pt-2 mb-n2">
-                            
-                            <div class="flex-fill"></div>
-                            <span><a href="javascript:" id="hot-lod-18791966" title='刷新' style="color:#6c757d"><i
-                                        class="iconfont icon-refresh text-md"></i></a></span>
-                        </div>
-                    </div>
-                </div>
-                <div id="hot-loading-18791966" class="ajax-loading text-center rounded"
-                    style="position:absolute;display:flex;width:100%;left:0;top:0;bottom:0;background:rgba(125,125,125,.5)">
-                    <div id="hot-success-18791966" class="col align-self-center"><i
-                            class="iconfont icon-loading icon-spin icon-2x"></i></div>
-                </div>
-                <script>
-                        (function ($) {
-                            var ruleId = "100007";
-                            getList(ruleId);
-
-                            $('#hot-lod-18791966').on('click', function () {
-                                $(this).children('i').addClass('icon-spin');
-                                $("#hot-success-18791966").html('<i class="iconfont icon-loading icon-spin icon-2x"></i>');
-                                $("#hot-loading-18791966").fadeIn(200);
-                                getList(ruleId);
-                            });
-                            function getList(id) {
-                                $.get("https://api.vvhan.com/api/hotlist?type=ssPai", function (response, status) {
-                                    var html = '';
-                                    var data = response.data;
-                                    for (var i = 0; i < data.length; i++) {
-                                        html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['title'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['hot'] + '</div></li>';
-                                    }
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    $("#hot-loading-18791966").fadeOut(200);
-                                    $('#hot-lod-18791966').children('i').removeClass('icon-spin');
-                                    $("#hot_news-18791966").html(html);
-                                }).fail(function () {
-                                    $('#hot-lod-18791966').children('i').removeClass('icon-spin');
-                                    $("#hot-success-18791966").show(200).html('获取失败，请再试一次！').parent().delay(3500).fadeOut(200);
-                                });
-                            }
-                        })(jQuery)
-                </script>
-            </div>
-            <style>
-                @media screen and (max-width: 1199.98px) {
-                    .hot-search {
-                        min-width: 1500px;
-                    }
-                }
-            </style>
+            </script>
         </div>
+        <style>
+            @media screen and (max-width: 1199.98px) {
+                .hot-search {
+                    min-width: 1500px;
+                }
+            }
+        </style>
     </div>
-    
+</div>
+
 
     
 
@@ -879,15 +899,17 @@
     <div class="d-flex flex-fill">
         <h4 class="text-gray text-lg mb-4">
             <i class="site-tag iconfont icon-tag icon-lg mr-1" id="6cd2cb4522f6b45d481c17005190bcc3"></i>
+            
+
             热门AI
         </h4>
         <div class="flex-fill"></div>
         
     </div>
-    
+
     
     <div class="row">
-        
+
         
         <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
             <div class="url-body default">
@@ -1033,6 +1055,97 @@
             <div class="url-body default">
                 
                 
+                    <a href="https://www.cursor.so/" target="_blank" data-id="" data-url="https://www.cursor.so/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="OpenAI官方强力助推编写代码的IDE。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/cursor.svg"
+                                        data-src="assets/images/logos/cursor.svg"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Cursor">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Cursor</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">OpenAI官方强力助推编写代码的IDE。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.cursor.so/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+    </div>
+    <br />
+    
+    
+    
+
+    <div class="d-flex flex-fill">
+        <h4 class="text-gray text-lg mb-4">
+            <i class="site-tag iconfont icon-tag icon-lg mr-1" id="e77319d4dba066fc862df817a401a03a"></i>
+            
+
+            AI对话
+        </h4>
+        <div class="flex-fill"></div>
+        
+    </div>
+
+    
+    <div class="row">
+
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://chat.openai.com/chat" target="_blank" data-id="" data-url="https://chat.openai.com/chat" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="最强AI，大语言模型。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/chatgpt.ico"
+                                        data-src="assets/images/logos/chatgpt.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="ChatGPT">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>ChatGPT</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">最强AI，大语言模型。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://chat.openai.com/chat" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
                     <a href="https://tongyi.aliyun.com/" target="_blank" data-id="" data-url="https://tongyi.aliyun.com/" class="card no-c mb-4"
                         data-toggle="tooltip" data-placement="bottom" data-original-title="阿里巴巴大语言模型。">
                         
@@ -1103,31 +1216,101 @@
             <div class="url-body default">
                 
                 
-                    <a href="https://www.cursor.so/" target="_blank" data-id="" data-url="https://www.cursor.so/" class="card no-c mb-4"
-                        data-toggle="tooltip" data-placement="bottom" data-original-title="OpenAI官方强力助推编写代码的IDE。">
+                    <a href="https://poe.com/" target="_blank" data-id="" data-url="https://poe.com/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="Poe：支持中文且完全免费的ChatGPT聊天app。">
                         
                         <div class="card-body">
                             <div class="url-content d-flex align-items-center">
                                 <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                     
                                     
-                                    <img class="lazy" src="assets/images/logos/cursor.svg"
-                                        data-src="assets/images/logos/cursor.svg"
+                                    <img class="lazy" src="assets/images/logos/poe.com.ico"
+                                        data-src="assets/images/logos/poe.com.ico"
                                         onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
-                                        alt="Cursor">
+                                        alt="Poe">
                                     
                                     
                                 </div>
                                 <div class="url-info flex-fill">
                                     <div class="text-sm overflowClip_1">
-                                        <strong>Cursor</strong>
+                                        <strong>Poe</strong>
                                     </div>
-                                    <p class="overflowClip_1 m-0 text-muted text-xs">OpenAI官方强力助推编写代码的IDE。</p>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">Poe：支持中文且完全免费的ChatGPT聊天app。</p>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.cursor.so/" class="togo text-center text-muted is-views" data-id="689"
+                    <a href="https://poe.com/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://console.anthropic.com/" target="_blank" data-id="" data-url="https://console.anthropic.com/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="11名OpenAI前员工怒而出走搞出的对话模型，硬刚ChatGPT。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/introducing-claude.ico"
+                                        data-src="assets/images/logos/introducing-claude.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Claude">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Claude</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">11名OpenAI前员工怒而出走搞出的对话模型，硬刚ChatGPT。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://console.anthropic.com/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://chat.lmsys.org/" target="_blank" data-id="" data-url="https://chat.lmsys.org/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="实现92%的GPT4能力的离线版ChatGPT-&gt;Vicuna。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/chat.lmsys.org.ico"
+                                        data-src="assets/images/logos/chat.lmsys.org.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Vicuna">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Vicuna</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">实现92%的GPT4能力的离线版ChatGPT-&gt;Vicuna。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://chat.lmsys.org/" class="togo text-center text-muted is-views" data-id="689"
                         data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
                         <i class="iconfont icon-goto"></i>
                     </a>
@@ -1143,15 +1326,52 @@
     <div class="d-flex flex-fill">
         <h4 class="text-gray text-lg mb-4">
             <i class="site-tag iconfont icon-tag icon-lg mr-1" id="ddcd9b9d106dcb0f3f5690c76ec7bece"></i>
+            
+
             AI绘画
         </h4>
         <div class="flex-fill"></div>
         
     </div>
-    
+
     
     <div class="row">
+
         
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://arc.tencent.com/zh/ai-demos/faceRestoration" target="_blank" data-id="" data-url="https://arc.tencent.com/zh/ai-demos/faceRestoration" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="腾讯AI实验室开发的人脸修复、人像抠图、动漫增强工具。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/arc.tencent.com.ico"
+                                        data-src="assets/images/logos/arc.tencent.com.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="ARC Lab">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>ARC Lab</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">腾讯AI实验室开发的人脸修复、人像抠图、动漫增强工具。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://arc.tencent.com/zh/ai-demos/faceRestoration" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
         
         <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
             <div class="url-body default">
@@ -1722,15 +1942,17 @@
     <div class="d-flex flex-fill">
         <h4 class="text-gray text-lg mb-4">
             <i class="site-tag iconfont icon-tag icon-lg mr-1" id="74ef64a0b7039461aae92a682e52aec3"></i>
+            
+
             AI视频
         </h4>
         <div class="flex-fill"></div>
         
     </div>
-    
+
     
     <div class="row">
-        
+
         
         <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
             <div class="url-body default">
@@ -1846,15 +2068,17 @@
     <div class="d-flex flex-fill">
         <h4 class="text-gray text-lg mb-4">
             <i class="site-tag iconfont icon-tag icon-lg mr-1" id="d2ec62e55d8567d2cfc9e6c30c6781e6"></i>
+            
+
             AI音频
         </h4>
         <div class="flex-fill"></div>
         
     </div>
-    
+
     
     <div class="row">
-        
+
         
         <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
             <div class="url-body default">
@@ -2005,15 +2229,52 @@
     <div class="d-flex flex-fill">
         <h4 class="text-gray text-lg mb-4">
             <i class="site-tag iconfont icon-tag icon-lg mr-1" id="466b0cab633cdfce6cad7a7ce0566d76"></i>
+            
+
             AI文案
         </h4>
         <div class="flex-fill"></div>
         
     </div>
-    
+
     
     <div class="row">
+
         
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://www.craft.do/" target="_blank" data-id="" data-url="https://www.craft.do/" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="Notion竞品，可免费使用GPT-3.5模型的AI写作助手。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/www.craft.do.ico"
+                                        data-src="assets/images/logos/www.craft.do.ico"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="Craft">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>Craft</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">Notion竞品，可免费使用GPT-3.5模型的AI写作助手。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.craft.do/" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
         
         <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
             <div class="url-body default">
@@ -2692,6 +2953,8 @@
     <div class="d-flex flex-fill">
         <h4 class="text-gray text-lg mb-4">
             <i class="site-tag iconfont icon-tag icon-lg mr-1" id="366f92545386bb2d5c7d59b3aa2858f9"></i>
+            
+
             Prompt指南
         </h4>
         
@@ -2850,12 +3113,49 @@
     <div class="d-flex flex-fill">
         <h4 class="text-gray text-lg mb-4">
             <i class="site-tag iconfont icon-tag icon-lg mr-1" id="8581ce3decc2b20b5a83335954033733"></i>
+            
+
             Github库
         </h4>
         
     </div>
     
     <div class="row">
+        
+        <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+                
+                
+                    <a href="https://github.com/lm-sys/FastChat" target="_blank" data-id="" data-url="https://github.com/lm-sys/FastChat" class="card no-c mb-4"
+                        data-toggle="tooltip" data-placement="bottom" data-original-title="Claude离线模型开源库。">
+                        
+                        <div class="card-body">
+                            <div class="url-content d-flex align-items-center">
+                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                    
+                                    
+                                    <img class="lazy" src="assets/images/logos/fastchat.jpeg"
+                                        data-src="assets/images/logos/fastchat.jpeg"
+                                        onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                                        alt="FastChat">
+                                    
+                                    
+                                </div>
+                                <div class="url-info flex-fill">
+                                    <div class="text-sm overflowClip_1">
+                                        <strong>FastChat</strong>
+                                    </div>
+                                    <p class="overflowClip_1 m-0 text-muted text-xs">Claude离线模型开源库。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/lm-sys/FastChat" class="togo text-center text-muted is-views" data-id="689"
+                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                        <i class="iconfont icon-goto"></i>
+                    </a>
+            </div>
+        </div>
         
         <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
             <div class="url-body default">
@@ -3778,6 +4078,8 @@
     <div class="d-flex flex-fill">
         <h4 class="text-gray text-lg mb-4">
             <i class="site-tag iconfont icon-tag icon-lg mr-1" id="58ba1baa4d39e50debed2a7eff9d069f"></i>
+            
+
             社交媒体
         </h4>
         
