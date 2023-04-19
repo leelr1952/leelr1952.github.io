@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI 网址导航 AI-tools</title>
-    <link>https://www.aiprojectstools.com/</link>
+    <link>https://aiwe.io/</link>
     <description>Recent content on AI 网址导航 AI-tools</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 09 Apr 2023 12:04:28 +0800</lastBuildDate><atom:link href="https://www.aiprojectstools.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Apr 2023 12:04:28 +0800</lastBuildDate><atom:link href="https://aiwe.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在Railway上部署ChatGPT-web项目</title>
-      <link>https://www.aiprojectstools.com/posts/first-demo/</link>
+      <link>https://aiwe.io/posts/first-demo/</link>
       <pubDate>Sun, 09 Apr 2023 12:04:28 +0800</pubDate>
       
-      <guid>https://www.aiprojectstools.com/posts/first-demo/</guid>
+      <guid>https://aiwe.io/posts/first-demo/</guid>
       <description>简介 Railway 是一个PaaS (Platform as a Service) 平台，可以轻松地将你的项目部署到生产环境中。它支持多种编程语言和框架，如Node.js、Python、Ruby等</description>
     </item>
     
     <item>
       <title>关于这个网站</title>
-      <link>https://www.aiprojectstools.com/about/</link>
+      <link>https://aiwe.io/about/</link>
       <pubDate>Sat, 08 Apr 2023 21:09:32 +0800</pubDate>
       
-      <guid>https://www.aiprojectstools.com/about/</guid>
+      <guid>https://aiwe.io/about/</guid>
       <description>欢迎来到我的AI工具网站！本网站是一个专门介绍AI领域的网址导航站点，为广大AI从业者、学习者提供一个集大成者的AI工具和资源库。本项目是基</description>
     </item>
     
