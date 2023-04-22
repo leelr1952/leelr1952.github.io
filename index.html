@@ -750,7 +750,7 @@
                     style="background-color:transparent;border-bottom:0">
                     <span><img class="hot-ico"
                             src="https://api.iowen.cn/favicon/www.github.com.png"
-                            alt="GitHub热榜"><span class="title-2081089809">GitHub热榜</span></span>
+                            alt="GitHub Trending"><span class="title-2081089809">GitHub Trending</span></span>
                     <span class="ml-auto d-none d-md-block text-xs slug-2081089809"></span>
                 </div>
                 <div class="card-body pb-3 pt-0">
@@ -789,7 +789,7 @@
                                 var data = response.data
                                 
                                 for (var i = 0; i < data.length; i++) {
-                                    html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['name'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['stars'] + ' star</div></li>';
+                                    html += '<li class="d-flex text-sm mb-2"><div><span class="hot-rank hot-rank-' + (i + 1) + ' text-xs text-center">' + (i + 1) + '</span><a class="ml-2" href="' + data[i]['url'] + '" target="_blank" rel="external noopener nofollow">' + data[i]['name'] + '</a></div><div class="ml-auto hot-heat d-none d-md-block text-muted">' + data[i]['stars'] + ' <i class="far fa-star"></i></div></li>';
                                 }
                                 
                                 $("#hot-loading-2081089809").fadeOut(200);
