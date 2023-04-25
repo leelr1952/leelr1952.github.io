@@ -1237,10 +1237,7 @@ footer.site-footer .powerby a {
     background-color: var(--card-background)
 }
 
-html {
-    font-size: 62.5%;
-    overflow-y: scroll
-}
+
 
 * {
     box-sizing: border-box

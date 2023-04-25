@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 09 Apr 2023 12:04:28 +0800</lastBuildDate><atom:link href="https://aiwe.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在Railway上部署ChatGPT-web项目</title>
-      <link>https://aiwe.io/posts/first-demo/</link>
+      <link>https://aiwe.io/posts/first-demo/first-demo/</link>
       <pubDate>Sun, 09 Apr 2023 12:04:28 +0800</pubDate>
       
-      <guid>https://aiwe.io/posts/first-demo/</guid>
+      <guid>https://aiwe.io/posts/first-demo/first-demo/</guid>
       <description>简介 Railway 是一个PaaS (Platform as a Service) 平台，可以轻松地将你的项目部署到生产环境中。它支持多种编程语言和框架，如Node.js、Python、Ruby等</description>
     </item>
     
