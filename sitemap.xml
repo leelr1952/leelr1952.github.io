@@ -5,7 +5,16 @@
     <loc>https://aiwe.io/</loc>
     <lastmod>2023-04-09T12:04:28+08:00</lastmod>
   </url><url>
+    <loc>https://aiwe.io/categories/</loc>
+    <lastmod>2023-04-09T12:04:28+08:00</lastmod>
+  </url><url>
+    <loc>https://aiwe.io/categories/Test/</loc>
+    <lastmod>2023-04-09T12:04:28+08:00</lastmod>
+  </url><url>
     <loc>https://aiwe.io/posts/first-demo/first-demo/</loc>
+    <lastmod>2023-04-09T12:04:28+08:00</lastmod>
+  </url><url>
+    <loc>https://aiwe.io/categories/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2023-04-09T12:04:28+08:00</lastmod>
   </url><url>
     <loc>https://aiwe.io/posts/</loc>
@@ -14,7 +23,15 @@
     <loc>https://aiwe.io/about/</loc>
     <lastmod>2023-04-08T21:09:32+08:00</lastmod>
   </url><url>
-    <loc>https://aiwe.io/categories/</loc>
+    <loc>https://aiwe.io/page/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aiwe.io/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aiwe.io/page/links/</loc>
+  </url><url>
+    <loc>https://aiwe.io/page/search/</loc>
   </url><url>
     <loc>https://aiwe.io/tags/</loc>
   </url>
