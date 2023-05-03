@@ -55,8 +55,8 @@
     
     <div class="page-container">
 	
-	<div id="sidebar" class="sticky sidebar-nav fade animate-nav" style="width: 170px">
-        
+        <div id="sidebar" class="sticky sidebar-nav fade mini-sidebar" style="width: 60px;">
+	
             <div class="modal-dialog h-100 sidebar-nav-inner">
                 <div class="sidebar-logo border-bottom border-color">
                     
@@ -974,6 +974,7 @@
       <ul>
         <li><a href="#遇到的问题一">遇到的问题一</a></li>
         <li><a href="#遇到的问题二">遇到的问题二</a></li>
+        <li><a href="#遇到的问题三">遇到的问题三</a></li>
       </ul>
     </li>
   </ul>
@@ -1036,7 +1037,14 @@
 <p>在hugo中使用两种主题，遇到的第一个问题，就是要熟悉两种主题的配置文件，因为每种主题的作者的开发方式都不同</p>
 <h3 id="遇到的问题二">遇到的问题二</h3>
 <p>样式冲突，样式冲突时最难调整的，一个字体、一个颜色，可能在两种主题的css中有相同的定义，但却有不同的效果，在什么页面用什么主题必须配合浏览器开发者工具还有css源代码一起调整，我愿称之为css逆向。。。</p>
-
+<h3 id="遇到的问题三">遇到的问题三</h3>
+<p>在使用<code>{{ range first 5 .links}}</code>循环时遇到报错：<code>execute of template failed at &lt;first 5 .links&gt;: error calling first: both limit and seq must be provided</code>，可以尝试用以下方法：</p>
+<pre tabindex="0"><code>{{ with .links}}
+    {{ range first 5 . }}
+        xxx
+    {{ end }}
+{{ end }}
+</code></pre>
 </section>
 
 
@@ -1271,7 +1279,7 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
 <script type='text/javascript' src='/assets/js/lazyload.min-12.4.0.js' id='lazyload-js'></script>
 <script type='text/javascript' src='/assets/js/fancybox.min-3.5.7.js' id='lightbox-js-js'></script>
 
-<script type='text/javascript' src='/assets/js/app-anim.js' id='appanim-js'></script>
+<script type='text/javascript' src='/assets/js/app-mini.js' id='appmini-js'></script>
 
 <script type="text/javascript">
     $(document).ready(function(){
