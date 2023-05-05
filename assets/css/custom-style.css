@@ -1,5 +1,10 @@
 /*调整全局字体大小*/
-body,html{font-size:16px;}
+body,html{font-size:16px;font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;}
+
+/* 谷歌字体 */
+
 
 /*左导航悬浮sidebar-menu-inner宽度调整为90px*/
 .sidebar-popup.sidebar-menu-inner > div > ul > li.sidebar-item>ul{position:absolute;top:0px;left:10px;width:90px;z-index:99}
